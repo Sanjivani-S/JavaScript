@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>
+    Welcome to the "show more text" example.
+    <a href="#" id="more" onclick="show_text()"> Read More....</a>
+    <span id="text" style="display: none;"> Welcome to javascript and DOM </span>
+    <p id="p1"><br></p>
+    </h4>
+    <script>
+        
+        function show_text()
+        {
+            var i=0;
+            var paragraph = document.getElementById("p1");
+            for (i=0; i<10; i++)  paragraph.textContent += " Welcome to javascript and DOM. ";    
+        }
+
+    </script>
+</body>
+</html>
